@@ -1,58 +1,126 @@
-# Kross Jekyll
+## Header
 
-Kross Jekyll Creative Portfolio Template ported from [Kross HTML Template](https://themefisher.com/products/kross/)
+Header folder consists of 8 variations of Page Header with Titles
 
-## Demo
+### bg_color: 
+this variable when defined on page will change the color of header (page title bckground)
+it can take values as follows 
+    bg-default
+    bg-dark
+    bg-gray
+    bg-white
+    bg-red
+	bg-orange
+	bg-yellow
+	bg-green
+	bg-leaf
+	bg-teal
+	bg-aqua
+	bg-meander
+	bg-blue
+	bg-cobalt
+	bg-sky
+	bg-purple
+	bg-violet
+	bg-pink
+	bg-rose
+	bg-hibiscus
+	bg-brown
 
-| Homepage  | About  | Blog  | Portfolio  | Contact  |
-|---|---|---|---|---|
-| ![Homepage](https://user-images.githubusercontent.com/37659754/58154295-1a9c5300-7c93-11e9-992c-ad8d2ff8d99f.png) | ![About](https://user-images.githubusercontent.com/37659754/58154317-28ea6f00-7c93-11e9-914b-b7e5f1cdab0e.png) | ![Blog](https://user-images.githubusercontent.com/37659754/58154339-369ff480-7c93-11e9-9568-53b7ebdc6b2d.png) | ![portfolio](https://user-images.githubusercontent.com/37659754/58154368-491a2e00-7c93-11e9-8900-f5a6abe0a61d.png) | ![contact](https://user-images.githubusercontent.com/37659754/58154403-57684a00-7c93-11e9-9cea-ea28253a6f6a.png) |
+## Nav
 
-[Live Preview](http://demo.themefisher.com/kross).
+Nav folder consists of 11 variations of Navigation 
+ by default the logo is set to white for classic 
+ you can set black logo by following 
 
-## Setup
+ 	{% include navigation.html default_logo="black" logo_class="custom-logo-class" %}
 
-To start your project, fork this repository
-After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
+for nav-10 
+	{% include nav-10.html shop_header=true %}
 
-Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
+This would include the shop-header.html partial. Similarly, you can add other combinations:
 
-## Customize
+	{% include nav-10.html btn_header=true %}
+	{% include nav-10.html drop_search=true %}
+    <div class="navbar-brand">
+      <a href="{{site.url}}">
+        <!-- White Logo -->
+        <img 
+          src="{{site.data.general_settings.light_logo_1x}}" 
+          srcset="{{site.data.general_settings.light_logo_1x}} 1x, {{site.data.general_settings.light_logo_2x}} 2x"
+          class="{% if include.logo_class %}{{ include.logo_class }}{% else %}logo-light{% endif %} 
+                 {% unless include.default_logo == 'black' %}{% else %}d-none{% endunless %}" 
+          alt="{{site.data.general_settings.title}}" />
+        
+        <!-- Black Logo -->
+        <img 
+          src="{{site.data.general_settings.black_logo_1x}}" 
+          srcset="{{site.data.general_settings.black_logo_1x}} 1x, {{site.data.general_settings.black_logo_2x}} 2x"
+          class="{% if include.logo_class %}{{ include.logo_class }}{% else %}logo-dark{% endif %} 
+                 {% if include.default_logo == 'black' %}{% else %}d-none{% endif %}" 
+          alt="{{site.data.general_settings.title}}" />
+      </a>
+    </div>
 
-Things you can customize in `_data/settings.yml` (no HTML/CSS):
+Best Practice
 
-- Theme General Settings ( name, logo, email, phone, address )
-- Hero Section
-- About Section
-- Team Section
-- Skills Section
-- Experience Section
-- Education Section
-- Services Section
-- Portfolio Section
-- Testimonials Section
-- Client Slider Section
-- Contact Section
+    Use meaningful names for the class, such as center-logo, logo-with-padding, or logo-hover-effect, based on the styling applied.
+    Combine multiple styles in your custom-logo-class if needed, but keep the class name descriptive.
 
-## Deployment
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
+## Footer
 
-## Reporting Issues
+Footer folder consists of 8 variations of Footer 
 
-We use GitHub Issues as the official bug tracker for the **Kross Theme**. Please Search [existing issues](https://github.com/themefisher/kross-jekyll/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/kross-jekyll/issues/new)
+## Blogs
 
-## Technical Support or Questions
+The main blogs directory holds the design to blog pages and there are 8 variations of them
 
-If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
+### header_image : 
+this variable can be used to define a page title image. You can insert the path to your image in this variable.
 
-<!-- licence -->
-## License
+### post_format:  
+its a variable used in blog pages frontmatter to define which post type you wanna use
 
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+post_format can take the following values -- general , gallery, carousel , video
 
-**Code License:** Released under the [MIT](https://github.com/themefisher/kross-jekyll/blob/main/LICENSE) license.
+## Breadcrumbs
+Usage
+-----
 
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+To render the breadcrumbs for the current page:
+
+    {% include breadcrumbs.html %}
+
+To render the breadcrumbs for another page:
+
+    {% include breadcrumbs.html page=another_page %}
+
+To render breadcrumbs with the home page and date omitted (see [Options](#options) below
+for more options):
+
+    {% include breadcrumbs.html omit_home=true omit_date=true %}
+
+Options
+-------
+
+omit_home
+: Don't include the home page as the first breadcrumb.
+
+omit_collection
+: Don't include the page's collection ("posts" by default, for posts) in the breadcrumbs.
+
+omit_categories
+: Don't include the page's categories in the breadcrumbs.
+
+omit_date
+: Don't include the post's date (year, month and day) in the breadcrumbs.
+
+omit_year
+: Don't include the post's year in the breadcrumbs.
+
+omit_month
+: Don't include the post's month in the breadcrumbs.
+
+omit_date
+: Don't include the post's date in the breadcrumbs.
