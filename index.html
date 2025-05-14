@@ -566,9 +566,7 @@ blogs_area:
 	              <h5 class="from-top mb-0">Read More</h5>
 	            </figcaption>
 	          </figure>
-	          <div class="category">
-	          	<a href="/category/{{post.categories[0] | slugify}}" class="badge rounded-pill {{post.badge_color}} ">{{post.categories[0]}}</a>
-	          </div>
+
 	          <h2 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h2>
 	          <div class="meta mb-0"><span class="date"><i class="jam jam-clock"></i> {{post.date | date_to_string}}</span></div>
 	        </div>
