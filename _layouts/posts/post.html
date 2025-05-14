@@ -121,9 +121,7 @@ layout: default
                 {{ tags | split:'</li>' | sort | join:'</li>' }}
               </ul>
               <div class="space20 d-lg-none"></div>
-              <div class="d-flex align-items-center">
-                {% include utilities/social-share.html %}
-              </div>
+
             </div>
           </div>
           <!-- /.post-content -->
@@ -142,25 +140,7 @@ layout: default
 <!-- /.container -->
 </div>
 <!-- /.wrapper -->
-{% if page.slider_post %}
-{% include posts/slider-posts.html slider_post_title="Slider Posts" %}
-{% elsif page.trending %}
-{% include posts/trending-posts.html trending_post_title="Trending Posts" %}
-{% endif %}
 
-<div class="wrapper gray-wrapper">
-  <div class="container inner">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        {% include utilities/disqus-comments.html %}
-      </div>
-      <!-- /column -->
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
-</div>
-<!-- /.wrapper -->
 </div>
 <!--shail main blog-->
-{% include layouts/footer/footer-1.html %}
+{% include layouts/footer/footer-3.html %}

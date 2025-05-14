@@ -1,0 +1,66 @@
+---
+layout: default
+title: "Students"
+sub_title: "Students and Intern"
+background_image: "/assets/images/art/bg6.webp"
+
+teams_carousel:
+  enable: true
+  type: "grid"
+  data_source: members2
+  title: Meet The Team
+  sub_title: |
+    Students at KMAI
+
+
+---
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<!-- wrapper team members-->
+{% if page.teams_carousel.enable %}
+{% include components/team/team-members.html %}
+{% endif %}
+<!--/.wrapper team members-->
+
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Intern</h2>
+    <div class="row text-center">
+      <!-- 멤버 카드 반복 시작 -->
+      <div class="col-md-4 mb-4">
+        <figure class="rounded mb-25"><img src="{{relative_url}}/assets/images/art/te1.webp" alt="" /></figure>
+        <h4 class="mb-15">최호재</h4>
+        <div class="meta mb-5">현장실습생</div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <figure class="rounded mb-25"><img src="{{relative_url}}/assets/images/art/te2.webp" alt="" /></figure>
+        <h4 class="mb-15">신현우</h4>
+        <div class="meta mb-5">자체 인턴</div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <figure class="rounded mb-25"><img src="{{relative_url}}/assets/images/art/te2.webp" alt="" /></figure>
+        <h4 class="mb-15">이관영</h4>
+        <div class="meta mb-5">자체 인턴</div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <figure class="rounded mb-25"><img src="{{relative_url}}/assets/images/art/te2.webp" alt="" /></figure>
+        <h4 class="mb-15">박민건</h4>
+        <div class="meta mb-5">자체 인턴</div>
+      </div>
+
+
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+
+<!--/.footer Wrapper-->
+{% include layouts/footer/footer-3.html %}

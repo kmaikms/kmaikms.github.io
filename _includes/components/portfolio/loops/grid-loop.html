@@ -4,7 +4,7 @@
 {% assign is_boxed = include.is_boxed | default: false %}
 {% assign text_alignment = include.text_alignment | default: '' %}
 {% assign hide_content = include.hide_content | default: false %}
-{% assign items = site.portfolio | where:"grouped_by","grid" %}
+{% assign items = site.portfolio | where:"grouped_by", "grid" | sort: "date" | reverse %}
 
 {% for post in items %}
 <div class="item item-detailed grid-sizer {{ layout_class }} {% for filter in post.filters %} {{filter}} {% endfor %}">
@@ -12,10 +12,14 @@
   <div class="box bg-white shadow p-30">
     {% endif %}
     <figure class="main overlay overlay2 rounded mb-30">
-      <a href="{{post.big_image}}" class="lightbox"> <img src="{{post.thumbnail}}" alt="" /></a>
+      <a href="{{post.big_image}}" class="lightbox"> <img src="{{post.thumbnail}}" alt="" style="width: 100%; height: 260px; object-fit: cover;"/></a>
     </figure>
     {% unless hide_content %}
     <div class="post-content">
+      <div class="meta small text-muted mb-1">
+        <i class="jam jam-clock"></i> {{ post.date | date: "%Y-%m-%d" }}
+        &nbsp;|&nbsp; <i class="jam jam-user"></i> {{ post.contributor }}
+      </div>
       <h2 class="post-title mb-10"><a href="{{post.url}}">{{post.title}}</a></h2>
       <div class="meta mb-0">{{post.filters | join: ", "}}</div>
     </div>

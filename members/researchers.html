@@ -1,0 +1,144 @@
+---
+layout: default
+title: "Researchers"
+sub_title: "Researchers and Affiliated Researchers "
+background_image: "/assets/images/art/bg6.webp"
+
+teams_carousel:
+  enable: true
+  type: "grid"
+  data_source: members
+  title: Meet The Team
+  sub_title: |
+    Researchers at KMAI
+
+---
+{% include layouts/nav/nav-1.html drop_search=true alignment_class="ms-auto" %}
+{% include layouts/header/page-title.html %}
+
+<!-- wrapper team members-->
+{% if page.teams_carousel.enable %}
+{% include components/team/team-members.html %}
+{% endif %}
+<!--/.wrapper team members-->
+
+<!--
+<div class="wrapper light-wrapper">
+  <div class="container inner">
+    <hr class="dotted" />
+    <div class="space30"></div>
+  </div>
+</div>
+-->
+
+<!-- /.wrapper -->
+<div class="wrapper gray-wrapper">
+  <div class="container inner">
+    <h2 class="section-title mb-40 text-center">Affiliated Researchers
+    </h2>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">소속</th>
+              <th scope="col">부문</th>
+              <th scope="col">이름</th>
+              <th scope="col">메일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>지능화뿌리기술연구소</td>
+              <td>소재공급망연구부문</td>
+              <td>김동응 수석연구원</td>
+              <td>canon@kitech.re.kr</td>
+            </tr>
+
+          </tbody>
+        </table>
+       
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</div>
+<!-- /.wrapper -->
+
+
+
+<!--/.footer Wrapper-->
+{% include layouts/footer/footer-3.html %}

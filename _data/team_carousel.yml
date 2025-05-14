@@ -1,67 +1,130 @@
+############################## Researchers ##########################
+
 members:
+  - name: "윤종필 수석연구원"
+    designation: >
+      Jong Pil Yun
+
+      Ph.D in Electronic Engineering
+
+      (rebirth@kitech.re.kr)
+    description: >
+      <span style="font-weight: 1000;">제조AI연구센터장</span>
+
+      KITECH 연구책임자 (2016 ~ 현재)
+
+      UST 교수 (2021 ~ 현재)
+
+      포스코 책임연구원 (2009 ~ 2016)
+
+      포항공과대학교 전자전기공학 박사 (2009)
+    image: "/assets/images/art/te1.webp"
+
+  - name: "원홍인 수석연구원"
+    designation: >
+      Hong-In Won
+
+      Ph.D in Mechanical Engineering
+      
+      (luvhayym@kitech.re.kr)
+    description: >
+      <span style="font-weight: 1000;">제조AI협력팀장</span>
+
+      KITECH 연구책임자 (2019 ~ 현재)
+
+      TU Dresden Postdoc. (2017 ~ 2019)
+
+      한양대학교 기계설계공학 박사 (2017)
+    image: "/assets/images/art/te2.webp"
+
+  - name: "이상아 수석연구원"
+    designation: >
+      Sanga Lee
+
+      Ph.D in Aerospace Engineering
+
+      (ivory@kitech.re.kr)
+    description: >
+      KITECH 연구책임자 (2019 ~ 현재)
+
+      삼성전자 Staff Engineer (2018 ~ 2019)
+
+      서울대학교 항공우주공학 박사 (2017)
+    image: "/assets/images/art/te3.webp"
+
+  - name: "김민수 선임연구원"
+    designation: >
+      Min Su Kim
+
+      Ph.D in Electrical Engineering
+
+      (kms6777@kitech.re.kr)
+    description: >
+      KITECH 연구책임자 (2024 ~ 현재)
+
+      삼성전자 Staff Engineer (2022 ~ 2024)
+
+      포항공과대학교 전자전기공학 박사 (2022)
+    image: "/assets/images/art/te4.webp"
+
+  - name: "윤준석 연구원"
+    designation: >
+      Jun-Seok Yun
+
+      Master of Artificial Intelligence Convergence
+
+      (yunjs@kitech.re.kr)
+    description: >
+      KITECH 연구원 (2023 ~ 현재)
+
+      전남대학교 인공지능융합학과 석사 (2023)
+    image: "/assets/images/art/te5.webp"
+
+  - name: "김예진 연구원"
+    designation: >
+      Ye Jin Kim
+
+      Master of Computer Engineering
+
+      (najin24450@kitech.re.kr)
+    description: >
+      KITECH 연구원 (2024 ~ 현재)
+
+      가천대학교 컴퓨터공학과 석사 (2024)
+    image: "/assets/images/art/te6.webp"
+
+  - name: "이정훈 기술원"
+    designation: >
+      JeongHoon Lee
+
+      (kokonut@kitech.re.kr)
+    description: >
+      KITECH 기술원 (2018 ~ 현재)
+    image: "/assets/images/art/te1.webp"
+
+  - name: "김동주 연구원 (포스트닥터)"
+    designation: >
+      Dongju Kim
+
+      Ph.D in Mechanical Engineering
+
+      (kimdj65@kitech.re.kr)
+    description: >
+      KITECH 포스트닥터 (2024 ~ 현재)
+
+      한양대학교 기계설계공학 박사(2023)
+    image: "/assets/images/art/te1.webp"
+
+############################## Students ##########################
+
+members2: 
   - name: "Gibson Robert"
     designation: "Financial Analyst"
     description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
     image: "/assets/images/art/te1.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
+
   - name: "Connor Gibson"
     designation: "Sales Manager"
     description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
     image: "/assets/images/art/te3.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
-  - name: "Coriss Ambady"
-    designation: "Marketing Specialist"
-    description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
-    image: "/assets/images/art/te2.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
-  - name: "John Barkley"
-    designation: "Sales Manager"
-    description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
-    image: "/assets/images/art/te4.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
-  - name: "Nicolas Bruten"
-    designation: "Investment Planner"
-    description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
-    image: "/assets/images/art/te5.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
-  - name: "Jackie Sanders"
-    designation: "Sales Specialist"
-    description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus amet."
-    image: "/assets/images/art/te6.webp"
-    social_icons:
-      - icon: "jam jam-facebook"
-        url: "https://facebook.com"
-      - icon: "jam jam-twitter"
-        url: "#"
-      - icon: "jam jam-instagram"
-        url: "#"
+

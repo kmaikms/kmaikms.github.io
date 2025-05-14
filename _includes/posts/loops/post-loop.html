@@ -2,7 +2,7 @@
 
 {% assign title_length = include.title_length | default: 60 %}
 {% assign excerpt_length = include.excerpt_length | default: 30 %}
-{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-4' %}
+{% assign layout_class = include.layout_class | default: 'col-md-6 col-lg-6' %}
 {% assign is_boxed = include.is_boxed | default: false %}
 {% assign is_grid = include.is_grid | default: false %}
 {% assign text_alignment = include.text_alignment | default: '' %}
@@ -19,7 +19,7 @@
     {% if post.post_image %}
     <figure class="main mb-30 overlay overlay1 rounded">
       <a href="{{ post.url }}">
-        <img src="{{ post.post_image }}" alt="{{ post.title }}" />
+        <img src="{{ post.post_image }}" alt="{{ post.title }}" style="width: 100%; height: 260px; object-fit: cover;"/>
       </a>
       <figcaption>
         <h5 class="from-top mb-0">Read More</h5>

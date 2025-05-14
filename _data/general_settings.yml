@@ -1,11 +1,11 @@
 # General Settings
-title: "Snowlake - Creative Business and Startup Jekyll Theme"
-email: "tortoizthemes@gmail.com"
-email_2: "support@tortoizthemes.com"
+title: "KITECH Manufacturing AI Research Center"
+email: "kms6777@kitech.re.kr"
+#email_2: "support@tortoizthemes.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  Snowlake Jekyll Theme is a perfectly crafted fast loading and SEO-friendly static site generator theme
-  with a variety of UI elements and countless features. A perfect theme to build your next dream project.
-favicon: "/assets/images/favicon.webp"
+  The Manufacturing AI Research Center was newly established on January 1, 2024, as a direct organization under the Vice President of the Korea Institute of Industrial Technology. 
+  It aims to concentrate capabilities on developing an AI platform for the "AI-based innovation in manufacturing" initiative, promoting the rapid dissemination of the developed platform, and fostering in-house AI experts.
+favicon: "/assets/images/favicon.png"
 
 # Seo Meta Settings
 meta_og_image: "/assets/images/meta-image.webp"
@@ -24,46 +24,47 @@ light_logo_1x: "/assets/images/logo-light.webp"
 light_logo_2x: "/assets/images/logo-light@2x.webp"
 
 # Site Wide Address and Phone Number
-address_01: 'Moonshine St. <br>14/05 Light City,<br /> London, United Kingdom'
-phone_number: "+00 (123) 456 78 90"
+address_01: '156, Gaetbeol-ro, Yeonsu-gu, Incheon, Republic of Korea'
+phone_number: "+82 (032) 456 78 90"
 
 # Site Wide Copyright
-copyright_text: "© 2025 Snowlake. All rights reserved."
+copyright_text: "© 2025 KMAI. All rights reserved."
 
 # Site Wide Google Analytics
 google_analytics:
-  enable: false
+  enable: true
   key: "UA-664136761-1"  # UA-664136761-1
 
 # Site Wide Google Map  
 google_map: |
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.4564967931838!2d-122.03250858386237!3d37.33169997984258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b6e94ffe23%3A0x63bb79532baa6af4!2sApple+Campus!5e0!3m2!1sen!2str!4v1553850783971!5m2!1sen!2str" style="width:100%; height: 100%; border:0" allowfullscreen=""></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25358.800630047783!2d126.6417663958546!3d37.39337761836638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b77aa2915e66f%3A0x98a16c375680dc4e!2z7ZWc6rWt7IOd7IKw6riw7Iig7Jew6rWs7JuQIOu_jOumrOyCsOyXheq4sOyIoOyXsOq1rOyGjA!5e0!3m2!1sko!2skr!4v1747111254756!5m2!1sko!2skr" style="width:100%; height: 100%; border:0" allowfullscreen=""></iframe>
+
 
 # Site Wide Social Accounts
-social_accounts:
-  title: "Follow Us"
-  links:
-    - url: "#"
-      icon: "jam jam-twitter"
+# social_accounts:
+#   title: "Follow Us"
+#   links:
+#     - url: "#"
+#       icon: "jam jam-twitter"
 
-    - url: "#"
-      icon: "jam jam-facebook"
+#     - url: "#"
+#       icon: "jam jam-facebook"
 
-    - url: "#"
-      icon: "jam jam-instagram"
+#     - url: "#"
+#       icon: "jam jam-instagram"
 
-    - url: "#"
-      icon: "jam jam-vimeo"
+#     - url: "#"
+#       icon: "jam jam-vimeo"
       
-    - url: "#"
-      icon: "jam jam-youtube"
+#     - url: "#"
+#       icon: "jam jam-youtube"
 
 # Site Wide External Links for footer
 external_links:
-  title: "Learn More"
+  title: "Related Sites"
   links:
     - url: "#"
-      text: "About Us"
+      text: "KITECH Main"
     - url: "#"
       text: "Our Story"
     - url: "#"
@@ -104,10 +105,10 @@ external_links_03:
       text: "Process"
 
 # Footer Newsletter
-footer_newsletter:
-  title: "Our Newsletter"
-  sub_title: "Subscribe to our newsletter to get our news & deals delivered to your inbox!"
-  subscribe_button_text: "Join"
+# footer_newsletter:
+#   title: "Our Newsletter"
+#   sub_title: "Subscribe to our newsletter to get our news & deals delivered to your inbox!"
+#   subscribe_button_text: "Join"
 
 # Author Page Background Image
 author_page_header:
